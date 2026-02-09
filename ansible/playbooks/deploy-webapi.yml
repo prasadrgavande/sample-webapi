@@ -1,0 +1,112 @@
+---
+- name: Deploy ASP.NET Web API
+  hosts: all
+  become: yes
+  
+  vars:
+    artifact_source: "{{ playbook_dir }}/../../publish"
+    backup_dir: "/var/backups/webapi"
+  
+  tasks:
+    - name: Display deployment information
+      debug:
+        msg: |
+          Deploying to {{ environment }} environment
+          Target: {{ inventory_hostname }}
+          Install path: {{ install_path }}
+          Port: {{ app_port }}
+
+    - name: Install .NET Runtime
+      apt:
+        name: 
+          - aspnetcore-runtime-8.0
+          - dotnet-runtime-8.0
+        state: present
+        update_cache: yes
+
+    - name: Create application directory
+      file:
+        path: "{{ install_path }}"
+        state: directory
+        owner: www-data
+        group: www-data
+        mode: '0755'
+
+    - name: Create backup directory
+      file:
+        path: "{{ backup_dir }}"
+        state: directory
+        mode: '0755'
+
+    - name: Backup existing deployment (if exists)
+      shell: |
+        if [ -d "{{ install_path }}" ] && [ "$(ls -A {{ install_path }})" ]; then
+          tar -czf {{ backup_dir }}/backup-$(date +%Y%m%d-%H%M%S).tar.gz -C {{ install_path }} .
+          find {{ backup_dir }} -name "backup-*.tar.gz" -mtime +7 -delete
+        fi
+      args:
+        executable: /bin/bash
+
+    - name: Stop existing service (if running)
+      systemd:
+        name: "{{ systemd_service_name }}"
+        state: stopped
+      ignore_errors: yes
+
+    - name: Clear old application files
+      shell: rm -rf {{ install_path }}/*
+      args:
+        warn: false
+
+    - name: Copy application files
+      synchronize:
+        src: "{{ artifact_source }}/"
+        dest: "{{ install_path }}/"
+        delete: yes
+        recursive: yes
+      delegate_to: localhost
+
+    - name: Set correct permissions
+      file:
+        path: "{{ install_path }}"
+        owner: www-data
+        group: www-data
+        recurse: yes
+
+    - name: Create systemd service file
+      template:
+        src: "{{ playbook_dir }}/../roles/dotnet-deploy/templates/webapi.service.j2"
+        dest: "/etc/systemd/system/{{ systemd_service_name }}.service"
+        mode: '0644'
+      notify: reload systemd
+
+    - name: Enable and start service
+      systemd:
+        name: "{{ systemd_service_name }}"
+        enabled: yes
+        state: started
+        daemon_reload: yes
+
+    - name: Wait for application to start
+      wait_for:
+        port: "{{ app_port }}"
+        delay: 5
+        timeout: 60
+
+    - name: Verify application health
+      uri:
+        url: "http://localhost:{{ app_port }}/WeatherForecast"
+        method: GET
+        status_code: 200
+      register: health_check
+      retries: 5
+      delay: 3
+
+    - name: Display deployment status
+      debug:
+        msg: "Deployment successful! Application is running on port {{ app_port }}"
+
+  handlers:
+    - name: reload systemd
+      systemd:
+        daemon_reload: yes

@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "xm3pW32pqSHNCOh3lUUUEsjdN+PGsmXdOuBtfN5A3zI=",
+  "Source": "webapi.test",
+  "BasePath": "_content/webapi.test",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\BlogPosts\\11-Jenkins_ansible\\webapi\\src\\webapi\\webapi.csproj",
+      "Version": 2,
+      "Source": "webapi",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

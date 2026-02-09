@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\BlogPosts\\11-Jenkins_ansible\\webapi\\src\\webapi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7D9EE31-3D88-40D1-900D-0AD1E7EDB715}|..\\webapi.test\\webapi.test.csproj|d:\\blogposts\\11-jenkins_ansible\\webapi\\src\\webapi.test\\weatherforecastcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4F6909-AB6C-41D9-8AA4-3A75D713AC09}|webapi.csproj|d:\\blogposts\\11-jenkins_ansible\\webapi\\src\\webapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4F6909-AB6C-41D9-8AA4-3A75D713AC09}|webapi.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4F6909-AB6C-41D9-8AA4-3A75D713AC09}|webapi.csproj|d:\\blogposts\\11-jenkins_ansible\\webapi\\src\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4F6909-AB6C-41D9-8AA4-3A75D713AC09}|webapi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4F6909-AB6C-41D9-8AA4-3A75D713AC09}|webapi.csproj|d:\\blogposts\\11-jenkins_ansible\\webapi\\src\\webapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4F6909-AB6C-41D9-8AA4-3A75D713AC09}|webapi.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherForecastControllerTests.cs",
+              "DocumentMoniker": "D:\\BlogPosts\\11-Jenkins_ansible\\webapi\\src\\webapi.test\\WeatherForecastControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\webapi.test\\WeatherForecastControllerTests.cs",
+              "ToolTip": "D:\\BlogPosts\\11-Jenkins_ansible\\webapi\\src\\webapi.test\\WeatherForecastControllerTests.cs",
+              "RelativeToolTip": "..\\webapi.test\\WeatherForecastControllerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T20:12:45.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\BlogPosts\\11-Jenkins_ansible\\webapi\\src\\webapi\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "WeatherForecast.cs",
+              "ToolTip": "D:\\BlogPosts\\11-Jenkins_ansible\\webapi\\src\\webapi\\WeatherForecast.cs",
+              "RelativeToolTip": "WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T20:10:36.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\BlogPosts\\11-Jenkins_ansible\\webapi\\src\\webapi\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\BlogPosts\\11-Jenkins_ansible\\webapi\\src\\webapi\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T20:10:01.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\BlogPosts\\11-Jenkins_ansible\\webapi\\src\\webapi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\BlogPosts\\11-Jenkins_ansible\\webapi\\src\\webapi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T20:09:30.005Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

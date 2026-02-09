@@ -1,0 +1,6 @@
+D:\BlogPosts\11-Jenkins_ansible\webapi\src\webapi\obj\Debug\net8.0\staticwebassets.build.json
+D:\BlogPosts\11-Jenkins_ansible\webapi\src\webapi\obj\Debug\net8.0\staticwebassets.build.json
+D:\BlogPosts\11-Jenkins_ansible\webapi\src\webapi\obj\Debug\net8.0\staticwebassets.build.json
+D:\BlogPosts\11-Jenkins_ansible\webapi\src\webapi\obj\Debug\net8.0\staticwebassets.build.json
+D:\BlogPosts\11-Jenkins_ansible\webapi\src\webapi\obj\Debug\net8.0\staticwebassets.build.json
+D:\BlogPosts\11-Jenkins_ansible\webapi\src\webapi\obj\Debug\net8.0\staticwebassets.build.json

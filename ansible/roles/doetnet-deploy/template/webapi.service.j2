@@ -1,0 +1,19 @@
+[Unit]
+Description=ASP.NET Web API - {{ environment }}
+After=network.target
+
+[Service]
+Type=notify
+User=www-data
+Group=www-data
+WorkingDirectory={{ install_path }}
+ExecStart=/usr/bin/dotnet {{ install_path }}/WebApi.dll
+Restart=on-failure
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier={{ systemd_service_name }}
+Environment=ASPNETCORE_ENVIRONMENT={{ aspnetcore_environment }}
+Environment=ASPNETCORE_URLS=http://0.0.0.0:{{ app_port }}
+
+[Install]
+WantedBy=multi-user.target
