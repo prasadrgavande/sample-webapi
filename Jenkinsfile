@@ -130,32 +130,32 @@ pipeline {
             }
         }
         
-        // stage('SonarQube Analysis') {
-        //     when {
-        //         expression { params.RUN_SONARQUBE }
-        //     }
-        //     steps {
-        //         script {
-        //             echo "🔍 Running SonarQube analysis..."
+        stage('SonarQube Analysis') {
+            when {
+                expression { params.RUN_SONARQUBE }
+            }
+            steps {
+                script {
+                    echo "🔍 Running SonarQube analysis..."
                     
-        //             withSonarQubeEnv(SONARQUBE_SERVER) {
-        //                 dir(SOLUTION_PATH) {
-        //                     sh """
-        //                         dotnet sonarscanner begin \
-        //                             /k:"${SONARQUBE_PROJECT_KEY}" \
-        //                             /d:sonar.host.url=\$SONAR_HOST_URL \
-        //                             /d:sonar.login=\$SONAR_AUTH_TOKEN \
-        //                             /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml"
+                    withSonarQubeEnv(SONARQUBE_SERVER) {
+                        dir(SOLUTION_PATH) {
+                            sh """
+                                dotnet sonarscanner begin \
+                                    /k:"${SONARQUBE_PROJECT_KEY}" \
+                                    /d:sonar.host.url=\$SONAR_HOST_URL \
+                                    /d:sonar.login=\$SONAR_AUTH_TOKEN \
+                                    /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml"
                                 
-        //                         dotnet build ${PROJECT_NAME}/${PROJECT_NAME}.csproj --configuration Release
+                                dotnet build ${PROJECT_NAME}/${PROJECT_NAME}.csproj --configuration Release
                                 
-        //                         dotnet sonarscanner end /d:sonar.login=\$SONAR_AUTH_TOKEN
-        //                     """
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
+                                dotnet sonarscanner end /d:sonar.login=\$SONAR_AUTH_TOKEN
+                            """
+                        }
+                    }
+                }
+            }
+        }
         
         // stage('Quality Gate') {
         //     when {
