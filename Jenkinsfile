@@ -102,33 +102,33 @@ pipeline {
             }
         }
         
-        // stage('Run Unit Tests') {
-        //     when {
-        //         expression { !params.SKIP_TESTS }
-        //     }
-        //     steps {
-        //         script {
-        //             echo "🧪 Running unit tests..."
-        //             dir(SOLUTION_PATH) {
-        //                 sh """
-        //                     dotnet test ${TEST_PROJECT}/${TEST_PROJECT}.csproj \
-        //                         --configuration Release \
-        //                         --no-build \
-        //                         --logger "trx;LogFileName=test-results.trx" \
-        //                         --collect:"XPlat Code Coverage" \
-        //                         -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover
-        //                 """
-        //             }
+        stage('Run Unit Tests') {
+            when {
+                expression { !params.SKIP_TESTS }
+            }
+            steps {
+                script {
+                    echo "🧪 Running unit tests..."
+                    dir(SOLUTION_PATH) {
+                        sh """
+                            dotnet test ${TEST_PROJECT}/${TEST_PROJECT}.csproj \
+                                --configuration Release \
+                                --no-build \
+                                --logger "trx;LogFileName=test-results.trx" \
+                                --collect:"XPlat Code Coverage" \
+                                -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover
+                        """
+                    }
                     
-        //             // Publish test results
-        //             step([
-        //                 $class: 'MSTestPublisher',
-        //                 testResultsFile: "**/test-results.trx",
-        //                 failOnError: true
-        //             ])
-        //         }
-        //     }
-        // }
+                    // Publish test results
+                    step([
+                        $class: 'MSTestPublisher',
+                        testResultsFile: "**/test-results.trx",
+                        failOnError: true
+                    ])
+                }
+            }
+        }
         
         // stage('SonarQube Analysis') {
         //     when {
