@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession>
+  <Summary numSequencePoints="37" visitedSequencePoints="20" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="54.05" branchCoverage="0" maxCyclomaticComplexity="9" minCyclomaticComplexity="9" visitedClasses="2" numClasses="3" visitedMethods="6" numMethods="8" />
+  <Modules>
+    <Module hash="F750277D-0E57-4479-9E5B-F44C9927E7AC">
+      <ModulePath>webapi.dll</ModulePath>
+      <ModuleTime>2026-02-25T05:47:28</ModuleTime>
+      <ModuleName>webapi</ModuleName>
+      <Files>
+        <File uid="1" fullPath="D:\BlogPosts\11-Jenkins_ansible\webapi\src\webapi\Program.cs" />
+        <File uid="2" fullPath="D:\BlogPosts\11-Jenkins_ansible\webapi\src\webapi\WeatherForecast.cs" />
+        <File uid="3" fullPath="D:\BlogPosts\11-Jenkins_ansible\webapi\src\webapi\Controllers\WeatherForecastController.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="16" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>webapi.Program</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="16" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void webapi.Program::Main(System.String[])</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="8" ordinal="1" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="12" ordinal="2" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="14" ordinal="3" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="15" ordinal="4" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="17" ordinal="5" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="20" ordinal="6" sl="20" sc="1" el="20" ec="2" bec="2" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="21" ordinal="7" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="22" ordinal="8" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="23" ordinal="9" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="24" ordinal="10" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="26" ordinal="11" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="28" ordinal="12" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="31" ordinal="13" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="33" ordinal="14" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="34" ordinal="15" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="20" ordinal="0" path="0" offset="65" offsetend="67" sl="20" fileid="1" />
+                <BranchPoint vc="0" uspid="20" ordinal="1" path="1" offset="65" offsetend="85" sl="20" fileid="1" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="7" ec="1" el="34" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="75" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="4" />
+          <FullName>webapi.WeatherForecast</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.DateOnly webapi.WeatherForecast::get_Date()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="15" uspid="5" ordinal="0" sl="5" sc="1" el="5" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="5" ec="1" el="5" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 webapi.WeatherForecast::get_TemperatureC()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="25" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="7" ec="1" el="7" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 webapi.WeatherForecast::get_TemperatureF()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String webapi.WeatherForecast::get_Summary()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="20" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="11" ec="1" el="11" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="17" visitedSequencePoints="17" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="3" />
+          <FullName>webapi.Controllers.WeatherForecastController</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.IEnumerable`1&lt;webapi.WeatherForecast&gt; webapi.Controllers.WeatherForecastController::Get()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="23" ordinal="0" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="18" uspid="24" ordinal="1" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="18" uspid="25" ordinal="2" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="18" uspid="26" ordinal="3" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="18" uspid="27" ordinal="4" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="18" uspid="28" ordinal="5" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="18" uspid="29" ordinal="6" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="3" uspid="30" ordinal="7" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="3" uspid="31" ordinal="8" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="9" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="23" ec="1" el="31" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void webapi.Controllers.WeatherForecastController::.ctor(Microsoft.Extensions.Logging.ILogger`1&lt;webapi.Controllers.WeatherForecastController&gt;)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="3" uspid="17" ordinal="1" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="3" uspid="18" ordinal="2" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="3" uspid="19" ordinal="3" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="16" ec="1" el="19" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void webapi.Controllers.WeatherForecastController::.cctor()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1" uspid="10" ordinal="1" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1" uspid="11" ordinal="2" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1" uspid="12" ordinal="3" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="9" ec="1" el="12" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>
