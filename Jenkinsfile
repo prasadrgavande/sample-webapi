@@ -348,7 +348,7 @@ pipeline {
             archiveArtifacts artifacts: "${PUBLISH_DIR}/**/*", allowEmptyArchive: true
             
             // Cleanup
-            cleanWs()
+            // cleanWs()
         }
     }
 }
