@@ -27,9 +27,9 @@ pipeline {
     environment {
         DOTNET_CLI_HOME = '/tmp/dotnet'
         DOTNET_ROOT = '/usr/share/dotnet'
-        PROJECT_NAME = 'WebApi'
+        PROJECT_NAME = 'webapi'
         SOLUTION_PATH = 'src'
-        TEST_PROJECT = 'WebApi.Tests'
+        TEST_PROJECT = 'webapi.tests'
         PUBLISH_DIR = 'publish'
         SONARQUBE_SERVER = 'SonarQube'
         SONARQUBE_PROJECT_KEY = 'aspnet-webapi'
