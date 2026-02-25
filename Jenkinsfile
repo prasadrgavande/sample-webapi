@@ -112,7 +112,7 @@ pipeline {
                     dir(SOLUTION_PATH) {
                         sh """
                             dotnet test ${TEST_PROJECT}/${TEST_PROJECT}.csproj \
-                                --configuration Release \
+                                --configuration Debug \
                                 --no-build \
                                 --logger "trx;LogFileName=test-results.trx" \
                                 --collect:"XPlat Code Coverage" \
