@@ -87,20 +87,20 @@ pipeline {
             }
         }
         
-        // stage('Build Application') {
-        //     steps {
-        //         script {
-        //             echo "🔨 Building application..."
-        //             dir(SOLUTION_PATH) {
-        //                 sh """
-        //                     dotnet build ${PROJECT_NAME}/${PROJECT_NAME}.csproj \
-        //                         --configuration Release \
-        //                         --no-restore
-        //                 """
-        //             }
-        //         }
-        //     }
-        // }
+        stage('Build Application') {
+            steps {
+                script {
+                    echo "🔨 Building application..."
+                    dir(SOLUTION_PATH) {
+                        sh """
+                            dotnet build ${PROJECT_NAME}/${PROJECT_NAME}.csproj \
+                                --configuration Release \
+                                --no-restore
+                        """
+                    }
+                }
+            }
+        }
         
         // stage('Run Unit Tests') {
         //     when {
@@ -348,7 +348,7 @@ pipeline {
             archiveArtifacts artifacts: "${PUBLISH_DIR}/**/*", allowEmptyArchive: true
             
             // Cleanup
-            // cleanWs()
+            cleanWs()
         }
     }
 }
