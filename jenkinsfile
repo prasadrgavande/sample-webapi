@@ -53,8 +53,8 @@ pipeline {
                         $class: 'GitSCM',
                         branches: [[name: '*/main']],
                         userRemoteConfigs: [[
-                            url: 'https://github.com/your-username/aspnet-webapi.git',
-                            credentialsId: 'github-credentials'
+                            url: 'https://github.com/prasadrgavande/sample-webapi.git',
+                            credentialsId: 'PrasadLocal'
                         ]]
                     ])
                     
