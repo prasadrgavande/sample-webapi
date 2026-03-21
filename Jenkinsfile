@@ -34,6 +34,7 @@ pipeline {
         PUBLISH_DIR = 'publish'
         SONARQUBE_SERVER = 'SonarQube'
         SONARQUBE_PROJECT_KEY = 'webapi'
+        SONAR_AUTH_TOKEN = 'sqp_a8621484963702892d40b8e71bfea528904fe2d1'
     }
     
     stages {
