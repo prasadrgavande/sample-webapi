@@ -33,7 +33,7 @@ pipeline {
         TEST_PROJECT = 'webapi.test'
         PUBLISH_DIR = 'publish'
         SONARQUBE_SERVER = 'SonarQube'
-        SONARQUBE_PROJECT_KEY = 'aspnet-webapi'
+        SONARQUBE_PROJECT_KEY = 'webapi'
     }
     
     stages {
