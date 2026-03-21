@@ -27,6 +27,7 @@ pipeline {
     environment {
         DOTNET_CLI_HOME = '/tmp/dotnet'
         DOTNET_ROOT = '/usr/share/dotnet'
+        PATH = "/usr/share/dotnet:${env.HOME}/.dotnet:${env.HOME}/.dotnet/tools:${env.PATH}"
         PROJECT_NAME = 'webapi'
         SOLUTION_PATH = 'src'
         TEST_PROJECT = 'webapi.test'
