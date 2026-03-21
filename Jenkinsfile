@@ -144,13 +144,13 @@ pipeline {
                             sh """
                                 dotnet sonarscanner begin \
                                     /k:"${SONARQUBE_PROJECT_KEY}" \
-                                    /d:sonar.host.url=\$SONAR_HOST_URL \
-                                    /d:sonar.login=\$SONAR_AUTH_TOKEN \
+                                    /d:sonar.host.url="${SONAR_HOST_URL}" \
+                                    /d:sonar.login="${SONAR_AUTH_TOKEN}" \
                                     /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml"
                                 
                                 dotnet build ${PROJECT_NAME}/${PROJECT_NAME}.csproj --configuration Release
                                 
-                                dotnet sonarscanner end /d:sonar.login=\$SONAR_AUTH_TOKEN
+                                dotnet sonarscanner end /d:sonar.login="${SONAR_AUTH_TOKEN}"
                             """
                         }
                     }
